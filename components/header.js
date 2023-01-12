@@ -7,7 +7,7 @@ import styles from "../styles/Home.module.css";
 export default function Header() {
   return (
     <div className={styles.header}>
-      <div className={styles.wrapper}>
+      <div className={styles.headerWrapper}>
         <ul className={styles.ul}>
           <li className={styles.li}>
             <Link href="https://www.translink.ca/" className={[styles.logowrapper, styles.navLink]}>

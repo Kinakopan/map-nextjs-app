@@ -280,36 +280,38 @@
 /* === Author === */
 
 /* common */
-.bodyWrapper .header, .map, .footer, .wrapper, .footerWrapper, .copyrightBox, .ul, .li {
+.bodyWrapper, .header, .map, .footer, .wrapper, .headerWrapper, .footerWrapper, .copyrightBox, .ul, .li {
   display: flex;
+  justify-content: center;
   width: 100%;
-  background: white;
+  background-color: white;
   color: black;
 }
 
 .header {
+  width: 100%;
   height: 10rem;
 }
 
-.wrapper {
+.headerWrapper {
+  width: 80%;
   height: 100%;
 }
 
 /* header.js */
 .ul {
   display: flex;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
+  width: 100%;
+  height: 100%;
 }
 
 .li {
   width: unset;
   list-style: none;
-  max-width: 18rem;
+  max-width: 20rem;
 }
 
 /* map.js */
@@ -319,23 +321,37 @@
 }
 
 /* footer.js */
-.ulColumn {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .footer {
-  height: 10rem;
+  justify-content: center;
+  height: 15rem;
 }
 
 .footerWrapper {
-  width: 100%;
+  width: 70%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: space-between;
+}
+
+.ulColumn1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.ulColumn2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footerLi {
+  display: flex;
+  flex-direction: column;
 }
 
 .copyrightBox {
