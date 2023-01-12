@@ -89,6 +89,7 @@ export default function Footer() {
               2023 Mio Takagi
             </p>
           </div>
+
         </div>
       </div>
     </>
