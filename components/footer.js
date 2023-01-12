@@ -8,13 +8,13 @@ export default function Footer() {
   return (
     <>
       <div className={styles.footer}>
-        <div className={styles.wrapper}>
+        <div className={[styles.wrapper, styles.footerWrapper]}>
           <ul className={styles.ul}>
-            <li className={styles.li}>
-              <ul className={styles.ul}>
-                <li className={styles.li}>
-                  <Image width={100} height={45} src="/logo.jpg" />
-                </li>
+            <li className={[styles.li, styles.footerLogoBox]}>
+              <ul className={[styles.ul, styles.ulColumn]}>
+                <Link href="/" className={[styles.logowrapper, styles.navLink]}>
+                  <Image width={216} height={95} src="/logo.jpg" />
+                </Link>
                 <li className={styles.li}>
                   <p className={styles.p}>
                   Metro Vancouver's transportation network, serving residents and visitors with public transit, major roads, bridges and Trip Planning.
@@ -25,12 +25,15 @@ export default function Footer() {
 
             <li className={styles.li}>
               <h3 className={styles.h3}>Getting Around</h3>
-              <ul className={styles.ul}>
-                <Link href="/" className={[styles.logowrapper, styles.navLink]}>
-                  <Image width={216} height={95} src="/logo.jpg" />
-                </Link>
+              <ul className={[styles.ul, styles.ulColumn]}>
                 <li className={styles.li}>
-                  <a href="https://www.translink.ca/schedules-and-maps"
+                  <a href="https://www.translink.ca/transit-fares"
+                    className={styles.a}>
+                      Transit Fares
+                  </a>
+                </li>
+                <li className={styles.li}>
+                  <a href="https://www.translink.ca/schedules-and-maps?page=1"
                     className={styles.a}>
                       Schedules
                   </a>
@@ -50,7 +53,7 @@ export default function Footer() {
 
             <li className={styles.li}>
               <h3 className={styles.h3}>Resources</h3>
-              <ul className={styles.ul}>
+              <ul className={[styles.ul, styles.ulColumn]}>
                 <li className={styles.li}>
                   <a
                     href="https://www.translink.ca/about-us/customer-service/contact-information"
@@ -72,7 +75,7 @@ export default function Footer() {
               <p className={styles.p}>Contact Us</p>
               <p className={styles.p}>Call us at 604.953.3333</p><br />
               <a
-                href="/"
+                href="https://www.google.com/maps/place/TransLink/@49.2247324,-122.8939064,17z/data=!3m1!4b1!4m5!3m4!1s0x5486765906294161:0x8be44a756edffc2f!8m2!3d49.2247289!4d-122.8917178"
                 className={styles.a}>
                   400-287 Nelson's Ct.,<br />
                   New Westminster,<br />
@@ -81,7 +84,7 @@ export default function Footer() {
             </li>
           </ul>
 
-          <div className={styles.wrapper}>
+          <div className={styles.copyrightBox}>
             <p className={styles.copyright}>
               2023 Mio Takagi
             </p>
